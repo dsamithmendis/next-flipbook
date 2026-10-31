@@ -1,0 +1,98 @@
+{
+  "name": "next-flipbook",
+  "version": "0.7.0",
+  "description": "A realistic, responsive flipbook engine for React and Next.js. Drag to turn, pinch to zoom, thumbnails, bookmarks, fullscreen, print and share. PDFs via PDF.js.",
+  "keywords": [
+    "flipbook",
+    "page-flip",
+    "react",
+    "nextjs",
+    "pdf",
+    "document-viewer",
+    "magazine",
+    "catalog"
+  ],
+  "author": {
+    "name": "Samith Mendis",
+    "email": "samithmendis.01@gmail.com",
+    "url": "https://github.com/dsamithmendis"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsamithmendis/next-flipbook.git",
+    "directory": "packages/flipbook"
+  },
+  "bugs": "https://github.com/dsamithmendis/next-flipbook/issues",
+  "homepage": "https://github.com/dsamithmendis/next-flipbook#readme",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "default": "./dist/react/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.js"
+    },
+    "./image": {
+      "types": "./dist/image/index.d.ts",
+      "default": "./dist/image/index.js"
+    },
+    "./pdf": {
+      "types": "./dist/pdf/index.d.ts",
+      "default": "./dist/pdf/index.js"
+    },
+    "./actions": {
+      "types": "./dist/actions/index.d.ts",
+      "default": "./dist/actions/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "node scripts/clean.mjs && tsc -p tsconfig.build.json && node scripts/copy-assets.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "package": "npm run build && npm pack --dry-run",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.9",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.3.289"
+  }
+}

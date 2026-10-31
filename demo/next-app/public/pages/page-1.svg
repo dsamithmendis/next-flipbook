@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="hsl(212 42% 22%)"/>
+  <circle cx="470" cy="220" r="150" fill="hsl(212 65% 62%)" opacity="0.35"/>
+  <circle cx="380" cy="300" r="90" fill="hsl(212 65% 62%)" opacity="0.5"/>
+  <text x="110" y="560" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="hsl(212 60% 92%)">Field Notes</text>
+  
+  <text x="300" y="756" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="hsl(212 60% 92%)" opacity="0.6"></text>
+</svg>

@@ -1,0 +1,44 @@
+{
+  "name": "next-flipbook-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Monorepo for next-flipbook, a React and Next.js flipbook engine.",
+  "author": {
+    "name": "Samith Mendis",
+    "email": "samithmendis.01@gmail.com",
+    "url": "https://github.com/dsamithmendis"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "demo/*"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "npm run build -w next-flipbook && npm run dev -w next-flipbook-demo",
+    "build": "npm run build -w next-flipbook",
+    "build:demo": "npm run build -w next-flipbook && npm run build -w next-flipbook-demo",
+    "test": "npm run test -w next-flipbook",
+    "typecheck": "npm run typecheck -w next-flipbook",
+    "package": "npm run package -w next-flipbook",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix --max-warnings 0",
+    "e2e": "playwright test -c e2e/playwright.config.ts --grep-invert @visual",
+    "typecheck:all": "npm run typecheck -w next-flipbook && tsc -p demo/next-app/tsconfig.json --noEmit && tsc -p e2e/tsconfig.json",
+    "e2e:visual": "playwright test -c e2e/playwright.config.ts --project=desktop --grep @visual",
+    "e2e:visual:update": "playwright test -c e2e/playwright.config.ts --project=desktop --grep @visual --update-snapshots",
+    "verify:pack": "npm run build -w next-flipbook && node packages/flipbook/scripts/verify-pack.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "~1.56.1",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "playwright-core": "~1.56.1",
+    "typescript-eslint": "^8.72.1"
+  }
+}

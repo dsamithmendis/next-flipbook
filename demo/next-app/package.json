@@ -1,0 +1,30 @@
+{
+  "name": "next-flipbook-demo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Next.js App Router demo for next-flipbook.",
+  "scripts": {
+    "predev": "node scripts/copy-pdf-worker.mjs && node scripts/generate-large-pdf.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/copy-pdf-worker.mjs && node scripts/generate-large-pdf.mjs",
+    "build": "next build",
+    "start": "next start",
+    "generate:pages": "node scripts/generate-pages.mjs",
+    "generate:pdf": "node scripts/generate-pdf.mjs",
+    "generate:guide": "node scripts/generate-guide-pdf.mjs",
+    "generate:large": "node scripts/generate-large-pdf.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.0",
+    "next-flipbook": "*",
+    "pdfjs-dist": "^6.3.289",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "~5.9.3"
+  }
+}

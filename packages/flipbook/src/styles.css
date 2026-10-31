@@ -1,0 +1,38 @@
+/*
+ * next-flipbook default styles.
+ *
+ * Optional: the viewer lays itself out with inline styles and works without
+ * this file. Import it for hover and focus states and for the CSS variables
+ * below, which you can override on any ancestor or via `className`.
+ */
+
+.flipbook-root {
+  --flipbook-background: #eef0f2;
+  --flipbook-toolbar-background: rgba(255, 255, 255, 0.92);
+  --flipbook-toolbar-color: #1f2328;
+  --flipbook-page-background: #ffffff;
+  --flipbook-shadow: #000000;
+  --flipbook-accent: #2563eb;
+}
+
+.flipbook-root[data-flipbook-theme="dark"] {
+  --flipbook-background: #121417;
+  --flipbook-toolbar-background: rgba(30, 33, 37, 0.92);
+  --flipbook-toolbar-color: #e6e8eb;
+  --flipbook-page-background: #f7f7f5;
+  --flipbook-accent: #6ea8fe;
+}
+
+.flipbook-root:focus-visible {
+  outline: 2px solid var(--flipbook-accent, #2563eb);
+  outline-offset: -2px;
+}
+
+.flipbook-root [data-flipbook-button]:hover:not([aria-disabled="true"]) {
+  background: rgba(127, 127, 127, 0.18);
+}
+
+.flipbook-root [data-flipbook-button]:focus-visible {
+  outline: 2px solid var(--flipbook-accent, #2563eb);
+  outline-offset: 1px;
+}

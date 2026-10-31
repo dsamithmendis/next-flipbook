@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="hsl(96 30% 96%)"/>
+  <circle cx="130" cy="220" r="150" fill="hsl(96 65% 48%)" opacity="0.22"/>
+  <circle cx="220" cy="300" r="90" fill="hsl(96 65% 48%)" opacity="0.5"/>
+  <text x="110" y="400" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="hsl(96 40% 18%)">Hill Country</text>
+  <rect x="110" y="470" width="278" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="496" width="355" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="522" width="302" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="548" width="379" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="574" width="326" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="600" width="273" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="626" width="350" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="652" width="297" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/><rect x="110" y="678" width="374" height="8" rx="4" fill="hsl(96 40% 18%)" opacity="0.16"/>
+  <text x="300" y="756" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="hsl(96 40% 18%)" opacity="0.6">8</text>
+</svg>
