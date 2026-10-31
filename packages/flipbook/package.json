@@ -1,6 +1,6 @@
 {
   "name": "next-flipbook",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "A realistic, responsive flipbook engine for React and Next.js. Drag to turn, pinch to zoom, thumbnails, bookmarks, fullscreen, print and share. PDFs via PDF.js.",
   "keywords": [
     "flipbook",
